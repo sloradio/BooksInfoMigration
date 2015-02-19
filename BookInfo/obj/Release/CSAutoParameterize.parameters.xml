@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="BookInfoContext-Web.config Connection String" description="BookInfoContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;Initial Catalog=BookInfo2;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\BookInfo2.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\njohnson\\Desktop\\cs296n-example-BookInfo-0\.4\\BookInfo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookInfoContext']/@connectionString" />
+  </parameter>
+  <parameter name="BookInfoContext_DatabasePublish-Web.config Connection String" description="BookInfoContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="BookInfoContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\njohnson\\Desktop\\cs296n-example-BookInfo-0\.4\\BookInfo\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookInfoContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<BookInfo.Models.Event>
+@{
+    ViewBag.Title = "Event List";
+}
+
+<h2>Event List</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+        @Html.DisplayNameFor(model => model.Author)
+    </th> 
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var e in Model)
+    {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => e.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => e.Author.Name)
+                </td>
+                  
+                <td>
+                    @Html.DisplayFor(modelItem => e.Date)
+                </td>
+
+            </tr>
+    }
+
+</table>
